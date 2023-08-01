@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quantum Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-----------------------------------------Header + Nav---------------------------------------------------->
+    <header>
+      <div class="logo-container">
+        <img
+          src="./assets/icons/logo used in header.svg"
+          alt="logo"
+          class="logo"
+        />
+      </div>
+      <div class="head">
+        <!--<nav id="nav" class="header-nav">
+                <ul>
+                    <li class="selected"><a href="#">DASHBOARD</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                    <li><a href="#">USERS</a></li>
+                    <li><a href="#">REPORTS</a></li>
+                    <li><a href="#">ADMIN</a></li>
+                </ul>
+            </nav>-->
+        <!-----------------------------------------head icons---------------------------------------------------->
+
+        <div class="header-icons">
+          <div class="header-btn">
+            <div class="icon-circle">
+              <img
+                src="./assets/icons/alerts.svg"
+                alt="Notification"
+                class="icon-img"
+              />
+              <span class="icon-number">2</span>
+            </div>
+
+            <div class="announcements-bar-alert">
+              <div id="alert-notify" class="announcement-notify">
+                <!---------------------------------1-------------------------
+                <div class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">
+                      License for Introduction to Algebra has been assigned to
+                      your school
+                    </div>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+                <--------------------------------2-------------------------
+                <div class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">
+                      Lesson 3 Practice Worksheet overdue for Amy Santiago
+                    </div>
+                    <img
+                      src="./assets/icons/checked.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <p class="course-ann">
+                    Course: <span class="alt-course">Advance Mathematics</span>
+                  </p>
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+                <--3--
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">23 new students created</div>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <p class="msg-foot">
+                    <span class="date-time"> 14-Sep-2018 at 01:21pm </span>
+                  </p>
+                </div>
+
+                <--4--
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">
+                      15 submissions ready for eveluation
+                    </div>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <p class="course-ann">
+                    Course: <span class="alt-course">Basics of Algebra</span>
+                  </p>
+                  <p class="msg-foot">
+                    <span class="date-time"> 13-Sep-2018 at 01:15pm </span>
+                  </p>
+                </div>
+
+                <----------------------5--
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">
+                      License for Basic Concepts in Geometry has been assigned
+                      to your school
+                    </div>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <--6--
+                <div class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">
+                      Lesson 3 Practice Worksheet overdue for Sam Diego
+                    </div>
+                    <img
+                      src="./assets/icons/checked.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <p class="course-ann">
+                    Course: <span class="alt-course">Advance Mathematics</span>
+                  </p>
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <--6--
+                <div class="ann-notification">
+                  <div class="ann-head">
+                    <div class="alt-msg">
+                      Lesson 3 Practice Worksheet overdue for Amy Santiago
+                    </div>
+                    <img
+                      src="./assets/icons/checked.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <p class="course-ann">
+                    Course: <span class="alt-course">Advance Mathematics</span>
+                  </p>
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <!---------------------------------end------------------------->
+              </div>
+
+              <div class="alt-footer">
+                <div class="alt-foot"><a href="#">SHOW ALL</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!--Announcements-->
+          <div class="header-btn">
+            <div class="icon-circle">
+              <img
+                src="./assets/icons/announcements.svg"
+                alt="Announcement"
+                class="icon-img"
+              />
+              <span class="icon-number">1</span>
+            </div>
+
+            <div id="announcements-bar" class="announcements-bar">
+              <div id="announcement-notify" class="announcement-notify">
+                <!---------------------------------1---------------------
+                <div class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Wilson Kumar </span></p>
+                    <img
+                      src="./assets/icons/checked.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    No classes will be held on 21st Nov
+                  </div>
+                  <p class="msg-foot">
+                    <span class="attachments">
+                      <img src="/assets/icons/paperclip.png" alt="attach" />
+                      2 files are attached
+                    </span>
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Samson White </span></p>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    Guest lecture on Geometry on 20th September
+                  </div>
+                  <p class="msg-foot">
+                    <span class="attachments">
+                      <img src="/assets/icons/paperclip.png" alt="attach" />
+                      2 files are attached
+                    </span>
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+                
+                <div class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Wilson Kumar </span></p>
+                    <img
+                      src="./assets/icons/checked.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    Additional course materials available on request
+                  </div>
+                  <p class="course-ann">Course: Mathematics 101</p>
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Wilson Kumar </span></p>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    No classes will be held on 25th Dec
+                  </div>
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+                <----------------------5--
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Wilson Kumar </span></p>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    Additional course materials available on request
+                  </div>
+                  <p class="course-ann">Course: Mathematics 101</p>
+                  <p class="msg-foot">
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <-6-
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Samson White </span></p>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    Guest lecture on Geometry on 20th September
+                  </div>
+                  <p class="msg-foot">
+                    <span class="attachments">
+                      <img src="/assets/icons/paperclip.png" alt="attach" />
+                      2 files are attached
+                    </span>
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <!--7--
+                <div id="unread" class="ann-notification">
+                  <div class="ann-head">
+                    <p>PA: <span class="PA"> Samson White </span></p>
+                    <img
+                      src="./assets/icons/remove.png"
+                      alt="status"
+                      class="status"
+                    />
+                  </div>
+                  <div class="main-msg">
+                    Guest lecture on Geometry on 20th September
+                  </div>
+                  <p class="msg-foot">
+                    <span class="attachments">
+                      <img src="/assets/icons/paperclip.png" alt="attach" />
+                      2 files are attached
+                    </span>
+                    <span class="date-time"> 15-Sep-2018 at 07:21pm </span>
+                  </p>
+                </div>
+
+                <--------------------------------end------------------------->
+              </div>
+
+              <div class="announce-footer">
+                <div class="ann-foot"><a href="#">SHOW ALL</a></div>
+                <div class="ann-foot"><a href="#">CREATE NEW</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!--Profile Icon-->
+          <span class="profile-icon">
+            <img
+              src="./assets/profile.jpeg"
+              alt="profile"
+              class="profile-img"
+            />
+            <span class="icon-alpha">T</span>
+          </span>
+
+          <!--------------------------------Hamburgur------------------------------------->
+          <span class="hamburgur-icon">
+            <img
+              id="dashboard-menu"
+              src="./assets/icons/hamburger-menu.svg"
+              alt="dashboard-menu"
+              class="dashboard-menu"
+            />
+            <div class="dropdown-menu">
+              <ul>
+                <li class="selected">DASHBOARD</li>
+                <li class="expandable">
+                  <div class="expandable__title">
+                    CONTENT
+                    <span class="arrow-icon">
+                      <img src="./assets/down.png" alt="icons" />
+                    </span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li>Course catalog</li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class="expandable__title">
+                    USERS
+                    <span class="arrow-icon">
+                      <img src="./assets/down.png" alt="icons" />
+                    </span>
+                  </div>
+
+                  <ul class="sub-menu">
+                    <li>User 1</li>
+                    <li>User 2</li>
+                    <!-- Add more users here -->
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class="expandable__title">
+                    REPORTS
+                    <span class="arrow-icon">
+                      <img src="./assets/down.png" alt="icons" />
+                    </span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li>Report 1</li>
+                    <li>Report 2</li>
+                    <!-- Add more reports here -->
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class="expandable__title">
+                    ADMIN
+
+                    <span class="arrow-icon">
+                      <img src="./assets/down.png" alt="icons" />
+                    </span>
+                  </div>
+                  <ul class="sub-menu">
+                    <li>Admin 1</li>
+                    <li>Admin 2</li>
+                    <!-- Add more admin items here -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-----------------------------------------Subhead---------------------------------------------------->
+    <div class="main">
+      <div class="two-section">
+        <div class="courses">
+          <img
+            src="./assets/icons/courses.svg"
+            alt="courses"
+            class="courses-img"
+          />
+          <h1>4</h1>
+          <p>Courses</p>
+        </div>
+        <div class="classes">
+          <img
+            src="./assets/icons/classes.svg"
+            alt="classes"
+            class="classes-img"
+          />
+          <h1>4</h1>
+          <p>Classes</p>
+        </div>
+      </div>
+
+      <div class="filter">
+        <p>Showing 4 of 4 courses</p>
+
+        <div class="sub-filter">
+          <label for="sort">Sort By:</label>
+          <div class="custom-select">
+            <select id="sort" name="sort" namevalue="course-name">
+              <option value="course-name">Course Name</option>
+              <option value="course-namr">Course</option>
+            </select>
+          </div>
+          <img src="./assets/icons/sort.svg" alt="down" class="custom-icon" />
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------Main Content---------------------------------------------------->
+    <div id="main-content" class="main-content">
+      <!--card1-->
+      <!--    <div class="card">
+                    <div class="card-sub">
+                        <div class="card-img">
+                            <img src="./assets/images/imageMask-1.svg" alt="course-img">
+                        </div>
+                        <div class="card-content">
+                            <p id="topic">Acceleration</p>
+                            <div class="fav-star">
+                                <img src="./assets/icons/favourite.svg" alt="star">
+                            </div>
+                            <div class="sub-grade">
+                                <span><p>Physics</p></span>
+                                <span><p>Grade 7 <a href="#">+2</a></p></span>
+                            </div>
+                            <div class="syllabus">
+                                <p><b>4</b> Units <b>18</b> Lessons <b>24</b> Topics</p>
+                            </div>
+                            <div class="lectures">
+                                <div class="class-response">
+                                    <select id="lect" name="lect" required>
+                                        <option value="Mr. Frank's Class B" selected>Mr. Frank's Class B</option>
+                                        <option value="XYZ" disabled>No Classes</option>
+                                        <option value="Mr. Frank's Class B">Mr. Frank's Class A</option>
+                                        <option value="XYZ">All Classes</option>
+                                    </select>
+                                </div>
+                                <div class="attendance">
+                                    <span><p>50 students</p></span>
+                                    <span><p>21-Jan-2020 - 21-Aug-2020</p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icon-footer">
+                        <img src="./assets/icons/preview.svg" alt="preview">
+                        <img src="./assets/icons/manage course.svg" alt="manage-course">
+                        <img src="./assets/icons/grade submissions.svg" alt="grade-submission">
+                        <img src="./assets/icons/reports.svg" alt="reports">
+                    </div> 
+            </div>-->
+
+      <!--card2-
+                <div class="card">
+                    <div class="card-sub">
+                        <div class="card-img">
+                            <img src="./assets/images/imageMask-2.svg" alt="course-img">
+                        </div>
+                        <div class="card-content">
+                            <p id="topic">Displacement, Velocity and Speed</p>
+                            <div class="fav-star">
+                                <img src="./assets/icons/favourite.svg" alt="star">
+                            </div>
+                            <div class="sub-grade">
+                                <span><p>Physics 2</p></span>
+                                <span><p>Grade 6 <a href="#">+3</a></p></span>
+                            </div>
+                            <div class="syllabus">
+                                <p><b>2</b> Units <b>15</b> Lessons <b>20</b> Topics</p>
+                            </div>
+                            <div class="lectures">
+                                <!--shortcut-
+                                <div class="class-response-disable">
+                                    <select id="lect" name="lect" required>
+                                        <option value="Mr. Frank's Class B" >Mr. Frank's Class B</option>
+                                        <option value="XYZ" selected disabled>No Classes</option>
+                                        <option value="Mr. Frank's Class B">Mr. Frank's Class A</option>
+                                        <option value="XYZ">All Classes</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icon-footer">
+                        <img src="./assets/icons/preview.svg" alt="preview">
+                        <img src="./assets/icons/manage course.svg" alt="manage-course" class="disabled">
+                        <img src="./assets/icons/grade submissions.svg" alt="grade-submission" class="disabled">
+                        <img src="./assets/icons/reports.svg" alt="reports">
+                    </div>
+            </div> -->
+
+      <!--card3-
+                <div class="card">
+                    <div class="card-sub">
+                        <div class="card-img">
+                            <img src="./assets/images/imageMask.svg" alt="course-img">
+                        </div>
+                        <div class="card-content">
+                            <p id="topic">Introduction to Biology: Micro organisms and how they affect the other Life System in Environment</p>
+                            <div class="fav-star">
+                                <img src="./assets/icons/favourite.svg" alt="star">
+                            </div>
+                            <div class="sub-grade">
+                                <span><p>Biology</p></span>
+                                <span><p>Grade 4 <a href="#">+1</a></p></span>
+                            </div>
+                            <div class="syllabus">
+                                <p><b>5</b> Units <b>16</b> Lessons <b>22</b> Topics</p>
+                            </div>
+                            <div class="lectures">
+                                <div class="class-response">
+                                    <select id="lect" name="lect" required>
+                                        <option value="Mr. Frank's Class B" >Mr. Frank's Class B</option>
+                                        <option value="XYZ" disabled>No Classes</option>
+                                        <option value="Mr. Frank's Class B">Mr. Frank's Class A</option>
+                                        <option value="XYZ" selected>All Classes</option>
+                                    </select>
+                                </div>
+                                <div class="attendance">
+                                    <span><p>300 students</p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icon-footer">
+                        <img src="./assets/icons/preview.svg" alt="preview">
+                        <img src="./assets/icons/manage course.svg" alt="manage-course" class="disabled">
+                        <img src="./assets/icons/grade submissions.svg" alt="grade-submission" class="disabled">
+                        <img src="./assets/icons/reports.svg" alt="reports">
+                    </div>
+            </div> -->
+
+      <!--card4
+                <div class="card">
+                    <div class="expired-label">EXPIRED</div>
+                    <div class="card-sub">
+                        <div class="card-img">
+                            <img src="./assets/images/imageMask-3.svg" alt="course-img">
+                        </div>
+                        <div class="card-content">
+                            <p id="topic">Introduction to High School Mathematics</p>
+                            <div class="fav-star">
+                                <img id="disable" src="./assets/icons/favourite.svg" alt="star">
+                            </div>
+                            <div class="sub-grade">
+                                <span><p>Mathematics</p></span>
+                                <span><p>Grade 8 <a href="#">+3</a></p></span>
+                            </div>
+                            
+                            <div class="lectures">
+                                <div class="class-response">
+                                    <select id="lect" name="lect" required>
+                                        <option value="Mr. Frank's Class B" >Mr. Frank's Class B</option>
+                                        <option value="XYZ" disabled>No Classes</option>
+                                        <option value="Mr. Frank's Class A" selected>Mr. Frank's Class A</option>
+                                        <option value="XYZ">All Classes</option>
+                                    </select>
+                                </div>
+                                <div class="attendance">
+                                    <span><p>44 students</p></span>
+                                    <span><p>14-Oct-2019 - 20-Oct-2020</p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icon-footer">
+                        <img src="./assets/icons/preview.svg" alt="preview">
+                        <img src="./assets/icons/manage course.svg" alt="manage-course">
+                        <img src="./assets/icons/grade submissions.svg" alt="grade-submission">
+                        <img src="./assets/icons/reports.svg" alt="reports">
+                    </div>
+            </div>
+        </div>-->
+      <!-----------------------------------------Footer---------------------------------------------------->
+    </div>
+
+    <div class="foot">
+      <span><a href="#">About</a></span>
+      <span><a href="#">Contact Us</a></span>
+    </div>
+    <footer>
+      <img src="./assets/icons/logo used in footer.svg" alt="footer-logo" />
+      <p>
+        Copyright © 2020-2021 <b> Zeus Systems Pvt. Ltd. </b> Al rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>

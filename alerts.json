@@ -1,0 +1,58 @@
+[
+  {
+    "id": "read",
+    "alertMsg": "License for Introduction to Algebra has been assigned toyour school",
+    "status": "remove",
+    "course": null,
+    "date": "15-Sep-2018",
+    "time": "07:21pm"
+  },
+  {
+    "id": "read",
+    "alertMsg": "Lesson 3 Practice Worksheet overdue for Amy Santiago",
+    "status": "checked",
+    "course": "Advance Mathematics",
+    "date": "15-Sep-2018",
+    "time": "07:21pm"
+  },
+  {
+    "id": "unread",
+    "alertMsg": "23 new students created",
+    "status": "remove",
+    "course": null,
+    "date": "14-Sep-2018",
+    "time": "01:21pm"
+  },
+  {
+    "id": "unread",
+    "alertMsg": "15 submissions ready for eveluation",
+    "status": "remove",
+    "course": "Basics of Algebra",
+    "date": "13-Sep-2018",
+    "time": "01:15pm"
+  },
+  {
+    "id": "unread",
+    "alertMsg": "License for Basic Concepts in Geometry has been assigned to your school",
+    "status": "remove",
+    "course": null,
+    "date": "15-Sep-2018",
+    "time": "07:21pm"
+  },
+  {
+    "id": "read",
+    "alertMsg": "Lesson 3 Practice Worksheet overdue for Sam Diego",
+    "status": "checked",
+    "course": "Advance Mathematics",
+    "date": "15-Sep-2018",
+    "time": "07:21pm"
+  },
+  {
+    "id": "read",
+    "alertMsg": "Lesson 3 Practice Worksheet overdue for Amy Santiago",
+    "status": "checked",
+    "course": "Advance Mathematics",
+    "date": "15-Sep-2018",
+    "time": "07:21pm"
+  }
+]
