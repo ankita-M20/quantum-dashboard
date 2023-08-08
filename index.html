@@ -3,7 +3,7 @@
   <head>
     <title>Quantum Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <!-----------------------------------------Header + Nav---------------------------------------------------->
@@ -427,7 +427,11 @@
     <!-----------------------------------------Subhead---------------------------------------------------->
     <div class="main">
       <div class="two-section">
-        <div class="courses">
+        <div
+          id="two-sec-selected"
+          class="Section"
+          onclick="toggleSection('courses')"
+        >
           <img
             src="./assets/icons/courses.svg"
             alt="courses"
@@ -436,7 +440,7 @@
           <h1>4</h1>
           <p>Courses</p>
         </div>
-        <div class="classes">
+        <div id="classes" class="Section" onclick="toggleSection('classes')">
           <img
             src="./assets/icons/classes.svg"
             alt="classes"
@@ -446,16 +450,17 @@
           <p>Classes</p>
         </div>
       </div>
-
       <div class="filter">
         <p>Showing 4 of 4 courses</p>
 
         <div class="sub-filter">
           <label for="sort">Sort By:</label>
           <div class="custom-select">
-            <select id="sort" name="sort" namevalue="course-name">
-              <option value="course-name">Course Name</option>
-              <option value="course-namr">Course</option>
+            <select id="sort" name="sort" namevalue="lecture">
+              <option value="lecture">Course Name</option>
+              <option value="subject">Course</option>
+              <option value="grade">Grade</option>
+              <option value="studentsEnrolled">Students Enrolled</option>
             </select>
           </div>
           <img src="./assets/icons/sort.svg" alt="down" class="custom-icon" />

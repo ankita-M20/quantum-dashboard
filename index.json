@@ -1,85 +1,85 @@
 [
-    {
-        "lectImg": "./assets/images/imageMask-1.svg",
-        "favStarDisable": false,
-        "lecture": "Acceleration",
-        "subject": "Physics",
-        "grade": "7",
-        "gradeExtends": "+2",
-        "syllabus": {
-            "units": "4",
-            "lessons": "18",
-            "topics": "24"
-        },
-        "profClass": "Mr Frank's Class B",
-        "studentsEnrolled": "50",
-        "startDate": "21-Jan-2020",
-        "endDate": "21-Aug-2020",
-        "isexpired": false,
-        "preview": true,
-        "manageCourse": true,
-        "gradeSubmission": true,
-        "report": true
+  {
+    "lectImg": "./assets/images/imageMask-2.svg",
+    "favStarDisable": false,
+    "lecture": "Displacement, Velocity and Speed",
+    "subject": "Physics 2",
+    "grade": "6",
+    "gradeExtends": "+3",
+    "syllabus": {
+      "units": "2",
+      "lessons": "15",
+      "topics": "20"
     },
-    {
-        "lectImg": "./assets/images/imageMask-2.svg",
-        "favStarDisable": false,
-        "lecture": "Displacement, Velocity and Speed",
-        "subject": "Physics 2",
-        "grade": "6",
-        "gradeExtends": "+3",
-        "syllabus": {
-            "units": "2",
-            "lessons": "15",
-            "topics": "20"
-        },
-        "profClass": "No Classes",
-        "studentsEnrolled": null,
-        "startDate": null,
-        "endDate": null,
-        "isexpired": false,
-        "preview": true,
-        "manageCourse": false,
-        "gradeSubmission": false,
-        "report": true
+    "profClass": "No Classes",
+    "studentsEnrolled": null,
+    "startDate": null,
+    "endDate": null,
+    "isexpired": false,
+    "preview": true,
+    "manageCourse": false,
+    "gradeSubmission": false,
+    "report": true
+  },
+  {
+    "lectImg": "./assets/images/imageMask-1.svg",
+    "favStarDisable": false,
+    "lecture": "Acceleration",
+    "subject": "Physics",
+    "grade": "7",
+    "gradeExtends": "+2",
+    "syllabus": {
+      "units": "4",
+      "lessons": "18",
+      "topics": "24"
     },
-    {
-        "lectImg": "./assets/images/imageMask.svg",
-        "favStarDisable": false,
-        "lecture": "Introduction to Biology: Micro organisms and how they affect the other Life System in Environment",
-        "subject": "Biology",
-        "grade": "4",
-        "gradeExtends": "+1",
-        "syllabus": {
-            "units": "5",
-            "lessons": "16",
-            "topics": "22"
-        },
-        "profClass": "All Classes",
-        "studentsEnrolled": "300",
-        "startDate": null,
-        "endDate": null,
-        "isexpired": false,
-        "preview": true,
-        "manageCourse": false,
-        "gradeSubmission": false,
-        "report": true
+    "profClass": "Mr Frank's Class B",
+    "studentsEnrolled": "50",
+    "startDate": "21-Jan-2020",
+    "endDate": "21-Aug-2020",
+    "isexpired": false,
+    "preview": true,
+    "manageCourse": true,
+    "gradeSubmission": true,
+    "report": true
+  },
+  {
+    "lectImg": "./assets/images/imageMask.svg",
+    "favStarDisable": false,
+    "lecture": "Introduction to Biology: Micro organisms and how they affect the other Life System in Environment",
+    "subject": "Biology",
+    "grade": "4",
+    "gradeExtends": "+1",
+    "syllabus": {
+      "units": "5",
+      "lessons": "16",
+      "topics": "22"
     },
-    {
-        "lectImg": "./assets/images/imageMask-3.svg",
-        "favStarDisable": true,
-        "lecture": "Introduction to High School Mathematics",
-        "subject": "Mathematics",
-        "grade": "8",
-        "gradeExtends": "+3",
-        "profClass": "Mr Frank's Class B",
-        "studentsEnrolled": "44",
-        "startDate": "14-Oct-2019",
-        "endDate": "20-Oct-2020",
-        "isexpired": true,
-        "preview": true,
-        "manageCourse": true,
-        "gradeSubmission": true,
-        "report": true
-    }
+    "profClass": "All Classes",
+    "studentsEnrolled": "300",
+    "startDate": null,
+    "endDate": null,
+    "isexpired": false,
+    "preview": true,
+    "manageCourse": false,
+    "gradeSubmission": false,
+    "report": true
+  },
+  {
+    "lectImg": "./assets/images/imageMask-3.svg",
+    "favStarDisable": true,
+    "lecture": "Introduction to High School Mathematics",
+    "subject": "Mathematics",
+    "grade": "8",
+    "gradeExtends": "+3",
+    "profClass": "Mr Frank's Class B",
+    "studentsEnrolled": "44",
+    "startDate": "14-Oct-2019",
+    "endDate": "20-Oct-2020",
+    "isexpired": true,
+    "preview": true,
+    "manageCourse": true,
+    "gradeSubmission": true,
+    "report": true
+  }
 ]

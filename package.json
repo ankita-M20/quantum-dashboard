@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/es6-promise": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "mocha": "^10.2.0"
+  }
+}
