@@ -191,13 +191,14 @@ var SortCardsTemplate = function () {
 function toggleSection(section) {
     var sections = document.querySelectorAll(".Section");
     sections.forEach(function (sec) {
+        var _a, _b;
         if (sec.id === section) {
             sec.classList.add("selected");
-            sec.id = "two-sec-selected"; // Add the id to the selected section
+            (_a = sec.parentElement) === null || _a === void 0 ? void 0 : _a.classList.remove("move-right", "move-left");
+            (_b = sec.parentElement) === null || _b === void 0 ? void 0 : _b.classList.add(section === "courses" ? "move-left" : "move-right");
         }
         else {
             sec.classList.remove("selected");
-            sec.id = ""; // Remove the id from the non-selected section
         }
     });
 }
@@ -205,12 +206,18 @@ window.onload = function () {
     CardsTemplate();
     announcementsTemplate();
     alertsTemplate();
-    SortCardsTemplate(); //sorting of cards
-    toggleSection("courses");
+    SortCardsTemplate(); // sorting of cards
     var sections = document.querySelectorAll(".Section");
+    // Automatically select the "Courses" section on page load
+    toggleSection("courses");
     sections.forEach(function (sec) {
         sec.addEventListener("click", function () {
-            toggleSection(sec.id);
+            if (sec.id === "classes") {
+                toggleSection("classes"); // Select only the "Classes" section
+            }
+            else {
+                toggleSection(sec.id);
+            }
         });
     });
 };

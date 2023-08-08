@@ -294,6 +294,7 @@ header {
 
 /* CSS for hover behavior */
 .header-btn:hover .announcements-bar,
+#announcement-icon.clicked + .announcements-bar-alert,
 .header-btn:hover .announcements-bar-alert {
   display: block;
   z-index: 100;
@@ -481,15 +482,21 @@ header {
   align-items: center;
   padding-top: 11px;
   padding-bottom: 7px;
+  border-bottom: 4px solid transparent;
+  border-bottom: none;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom-color 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.Section.selected {
+  border-bottom: 4px solid black;
 }
 
 .Section h1,
 .Section p {
   margin: 8px;
-}
-
-#two-sec-selected {
-  border-bottom: 4px solid black; /* White bottom border for selected section */
 }
 
 .Section h1 {

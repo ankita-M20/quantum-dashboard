@@ -466,10 +466,12 @@ function toggleSection(section: string): void {
   sections.forEach((sec: HTMLElement) => {
     if (sec.id === section) {
       sec.classList.add("selected");
-      sec.id = "two-sec-selected"; // Add the id to the selected section
+      sec.parentElement?.classList.remove("move-right", "move-left");
+      sec.parentElement?.classList.add(
+        section === "courses" ? "move-left" : "move-right"
+      );
     } else {
       sec.classList.remove("selected");
-      sec.id = ""; // Remove the id from the non-selected section
     }
   });
 }
@@ -478,14 +480,21 @@ window.onload = () => {
   CardsTemplate();
   announcementsTemplate();
   alertsTemplate();
-  SortCardsTemplate(); //sorting of cards
+  SortCardsTemplate(); // sorting of cards
 
-  toggleSection("courses");
   const sections: NodeListOf<HTMLElement> =
     document.querySelectorAll(".Section");
+
+  // Automatically select the "Courses" section on page load
+  toggleSection("courses");
+
   sections.forEach((sec: HTMLElement) => {
     sec.addEventListener("click", () => {
-      toggleSection(sec.id);
+      if (sec.id === "classes") {
+        toggleSection("classes"); // Select only the "Classes" section
+      } else {
+        toggleSection(sec.id);
+      }
     });
   });
 };
