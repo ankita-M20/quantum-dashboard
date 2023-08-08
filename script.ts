@@ -179,8 +179,13 @@ const announcementsTemplate = (): void => {
         </div>`;
         }
       );
-      notificationTemplate.map((template) => {
-        return (notificationcard!.innerHTML += template);
+      notificationcard.innerHTML = notificationTemplate.join(""); // Join the templates into a single string
+
+      // Add the animation class to each notification element
+      const notificationElements =
+        document.querySelectorAll(".ann-notification");
+      notificationElements.forEach((element) => {
+        element.classList.add("downfall");
       });
     })
     .catch((err: Error) => {

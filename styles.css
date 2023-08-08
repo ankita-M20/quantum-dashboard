@@ -138,6 +138,17 @@ header {
   right: 220px;
 }
 
+@keyframes downfall {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .ann-notification {
   display: block;
   align-items: center;
@@ -145,6 +156,7 @@ header {
   padding-top: 10px;
   padding-bottom: 0px;
   border-bottom: 1px solid #cccccc;
+  animation: downfall 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
 }
 
 .ann-notification#unread {
@@ -307,7 +319,8 @@ header {
 .header-btn:hover .icon-number {
   display: none;
 }
-.header-btn:hover .icon-img {
+.header-btn:hover .icon-img,
+.header-bth:active .icon-img {
   filter: brightness(0) invert(1);
 }
 
@@ -350,11 +363,24 @@ header {
 }
 
 /* Make the dashboard-menu icon white on hover */
-.dashboard-menu:hover {
+.dashboard-menu:hover,
+.dashboard-menu:active {
   filter: brightness(0) invert(1);
 }
 
 /* Styles for .dropdown-menu */
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -365,6 +391,9 @@ header {
   z-index: 100;
   width: 350px;
   margin-right: 32px;
+  transition: max-height 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+  animation: dropdownFadeIn 0.3s ease-in-out forwards; /* Apply the animation when the menu appears */
+  transform-origin: top center;
 }
 
 .dropdown-menu ul {
@@ -413,6 +442,7 @@ header {
   background-color: #eeeeee;
   color: #3fd28b;
   width: 100%;
+  padding: 0px;
   padding-left: 10px;
   padding-top: 30px;
 }
@@ -459,7 +489,8 @@ header {
 }
 
 /* Show .dropdown-menu on Hover of Hamburgur Icon */
-.hamburgur-icon:hover .dropdown-menu {
+.hamburgur-icon:hover .dropdown-menu,
+.hamburgur-icon:active .dropdown-menu {
   display: block;
 }
 
