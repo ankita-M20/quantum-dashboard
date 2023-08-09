@@ -56,20 +56,24 @@ const CardsTemplate = (): void => {
                         <div class="lectures">
                             ${
                               cd.profClass === "No Classes"
-                                ? `<div class="class-response-disable">`
-                                : `<div class="class-response">`
+                                ? `<div class="class-response">`
+                                : `<div class="class-response-disable">`
                             }
-                                <select id="lect" name="lect" required >
+                                <select id="lect" name="lect" required ${
+                                  cd.profClass === "No Classes"
+                                    ? "disabled"
+                                    : ""
+                                }>                       
+                                ${
+                                  cd.profClass === "No Classes"
+                                    ? '<option value="No Classes">No Classes</option>'
+                                    : ""
+                                } 
                                     <option value="Mr. Frank's Class B" ${
                                       cd.profClass === "Mr. Frank's Class B"
                                         ? "selected"
                                         : ""
                                     }>Mr. Frank's Class B</option>
-                                    <option value="No Classes" disabled ${
-                                      cd.profClass === "No Classes"
-                                        ? "selected"
-                                        : ""
-                                    }>No Classes</option>
                                     <option value="Mr. Frank's Class A" ${
                                       cd.profClass === "Mr. Frank's Class A"
                                         ? "selected"
@@ -137,7 +141,6 @@ const CardsTemplate = (): void => {
       console.log("JSON Error:", err);
     });
 };
-
 const announcementsTemplate = (): void => {
   fetch("./announcements.json")
     .then((res: Response) => res.json())
@@ -239,6 +242,7 @@ const alertsTemplate = (): void => {
     });
 };
 
+//for implementing Sorting through multiple parameters
 interface Course {
   lecture: string;
   subject: string;

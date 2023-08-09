@@ -442,8 +442,8 @@ header {
   background-color: #eeeeee;
   color: #3fd28b;
   width: 100%;
-  padding: 0px;
   padding-left: 10px;
+  padding-right: 0px;
   padding-top: 30px;
 }
 
@@ -768,6 +768,11 @@ header {
   color: #222222;
 }
 
+/* Hide other options when "No Classes" is selected */
+.class-response-disable select option:not([value="No Classes"]) {
+  display: none;
+}
+
 .class-response select,
 .class-response-disable select {
   appearance: none; /* Remove default select styles */
@@ -786,6 +791,12 @@ header {
   color: #686868;
   opacity: 0.4;
   border-bottom: 1px solid #686868; /* Grey border when disabled */
+  cursor: not-allowed;
+}
+
+option[disabled] {
+  color: #686868;
+  cursor: not-allowed;
 }
 
 .class-response,
@@ -795,6 +806,10 @@ header {
   position: relative;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.class-response-disable {
+  cursor: not-allowed;
 }
 
 .class-response::after,

@@ -16,12 +16,14 @@ var CardsTemplate = function () {
                     ? "<b> ".concat(cd.syllabus.topics, "</b> Topics")
                     : " ", "\n                        </p> \n                        </div>")
                 : " ", "\n\n                        <div class=\"lectures\">\n                            ").concat(cd.profClass === "No Classes"
-                ? "<div class=\"class-response-disable\">"
-                : "<div class=\"class-response\">", "\n                                <select id=\"lect\" name=\"lect\" required >\n                                    <option value=\"Mr. Frank's Class B\" ").concat(cd.profClass === "Mr. Frank's Class B"
+                ? "<div class=\"class-response\">"
+                : "<div class=\"class-response-disable\">", "\n                                <select id=\"lect\" name=\"lect\" required ").concat(cd.profClass === "No Classes"
+                ? "disabled"
+                : "", ">                       \n                                ").concat(cd.profClass === "No Classes"
+                ? '<option value="No Classes">No Classes</option>'
+                : "", " \n                                    <option value=\"Mr. Frank's Class B\" ").concat(cd.profClass === "Mr. Frank's Class B"
                 ? "selected"
-                : "", ">Mr. Frank's Class B</option>\n                                    <option value=\"No Classes\" disabled ").concat(cd.profClass === "No Classes"
-                ? "selected"
-                : "", ">No Classes</option>\n                                    <option value=\"Mr. Frank's Class A\" ").concat(cd.profClass === "Mr. Frank's Class A"
+                : "", ">Mr. Frank's Class B</option>\n                                    <option value=\"Mr. Frank's Class A\" ").concat(cd.profClass === "Mr. Frank's Class A"
                 ? "selected"
                 : "", ">Mr. Frank's Class A</option>\n                                    <option value=\"All Classes\" ").concat(cd.profClass === "All Classes"
                 ? "selected"
@@ -62,8 +64,11 @@ var announcementsTemplate = function () {
                 ? "<span class=\"attachments\">\n              <img src=\"/assets/icons/paperclip.png\" alt=\"attach\" />\n              ".concat(an.attachments, "\n            </span>")
                 : " ", "\n            <span class=\"date-time\"> ").concat(an.date, " at ").concat(an.time, " </span>\n          </p>\n        </div>");
         });
-        notificationTemplate.map(function (template) {
-            return (notificationcard.innerHTML += template);
+        notificationcard.innerHTML = notificationTemplate.join(""); // Join the templates into a single string
+        // Add the animation class to each notification element
+        var notificationElements = document.querySelectorAll(".ann-notification");
+        notificationElements.forEach(function (element) {
+            element.classList.add("downfall");
         });
     })
         .catch(function (err) {
