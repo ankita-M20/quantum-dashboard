@@ -1,0 +1,285 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(assets/Quicksand-font-1/Quicksand-VariableFont_wght.ttf);
+  src: url(assets/Quicksand-font-1/static/Quicksand-Bold.ttf);
+  src: url(assets/Quicksand-font-1/static/Quicksand-Light.ttf);
+  src: url(assets/Quicksand-font-1/static/Quicksand-Medium.ttf);
+  src: url(assets/Quicksand-font-1/static/Quicksand-Regular.ttf);
+  src: url(assets/Quicksand-font-1/static/Quicksand-SemiBold.ttf);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
+  font-family: Quicksand;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("assets/header\ pattern\ svg.svg");
+  padding: 10px; /* Add some padding to the header if needed */
+  background-color: #242f3d;
+  overflow: hidden;
+  box-shadow: 0px 5px #41b3d8;
+}
+
+.logo-container {
+  margin-right: 20px; /* Adjust the right margin as needed */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.login {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  background: white;
+  box-shadow: inset 0px 5px #41b3d8;
+  padding: 20px;
+  margin-bottom: 35px;
+}
+
+.main {
+  flex: 1;
+}
+
+.page-head {
+  display: grid;
+  grid-template-columns: auto 1fr; /* First column for icon, second column for h2 */
+  align-items: center; /* Center elements vertically within the grid container */
+  gap: 10px; /* Add spacing between icon and h2 tag */
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 30px; /* Set the width of the icon */
+  height: 30px; /* Set the height of the icon */
+}
+
+h2 {
+  font-size: 20px; /* Set the font size of the h2 tag */
+  margin: 0; /* Remove default margins to center h2 */
+  flex: 1; /* Allow h2 to take remaining space and be centered */
+  text-align: center; /* Center the h2 text horizontally */
+}
+
+.dropdown label {
+  font-size: smaller;
+  color: #acacac;
+}
+
+.radio-btn {
+  display: flex; /* Align radio buttons in the same line */
+  margin-bottom: 20px;
+  accent-color: green;
+}
+
+.radio-btn label {
+  margin-right: 10px; /* Add 10px spacing between the labels */
+}
+
+/* Styles for the text input */
+.text-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.text-input input[type="text"],
+.text-input input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey; /* Set the color for the bottom line */
+  background-color: transparent; /* Make the background transparent */
+  padding: 5px 0px; /* Adjust padding as needed */
+  font-size: 16px; /* Set the font size for the input text */
+  outline: none; /* Remove the default focus outline */
+}
+
+.text-input input[type="checkbox"] {
+  accent-color: green;
+  transform: scale(1.3); /* Make the checkbox a bit bigger */
+  margin-bottom: 20px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url("/assets/icons/preview.svg"); /* Replace with the path to your eye icon image */
+  width: 20px; /* Set the width of the icon */
+  height: 20px; /* Set the height of the icon */
+  background-size: cover;
+}
+
+button[type="submit"] {
+  display: flex;
+  width: 50%;
+  padding: 10px 0; /* 5px padding on top and bottom */
+  font-size: 14px;
+  color: black; /* Text color - white */
+  background-color: #3fd28b; /* Green background color */
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none; /* Remove the default focus outline */
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 2px 5px grey;
+  margin-bottom: 5px;
+  font-family: Quicksand;
+}
+
+/* On hover, change the background color */
+button[type="submit"]:hover {
+  background-color: green; /* Black background color on hover */
+}
+
+a:link {
+  color: #3fd28b;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  background-color: #e0e1e1; /* Background color for the footer */
+  padding: 10px; /* Add some padding to the footer content */
+  font-size: 14px; /* Font size for the copyright text */
+}
+
+footer p {
+  margin: 0; /* Remove margin to prevent extra spacing */
+  color: #616161; /* Font color for the copyright text */
+  text-align: center;
+  padding-right: 10px; /* Add some padding to the right of the p element */
+}
+
+/* Optional: Add a left border to separate img and p (uncomment this if needed) */
+footer img {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+  margin-right: 10px;
+  justify-self: center;
+}
+
+footer b {
+  margin-left: 5px;
+  margin-right: 5px; /* Add 5px margin to the right of the <b> element */
+}
+
+.foot {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  padding: 10px; /* Add some padding to the .foot div */
+}
+
+/* Styles for the links within .foot div */
+.foot a {
+  color: #3fd28b; /* Change link color to green (#3fd28b) */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0 10px; /* Add some padding to the links */
+  border-right: 1px solid grey; /* Add a right border to separate links */
+}
+
+.foot span:nth-child(2) a {
+  border-right: none;
+}
+
+/* Styles for the dropdown container */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  font-family: Quicksand;
+}
+
+.custom-icon select {
+  width: 100%;
+  border: none;
+  background-color: transparent; /* Make the background transparent */
+  -webkit-appearance: none; /* Remove default arrow on Safari */
+  -moz-appearance: none; /* Remove default arrow on Firefox */
+  appearance: none; /* Remove default arrow on other browsers */
+}
+
+/* Styles for the custom dropdown */
+.custom-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px solid grey; /* Set the color for the bottom line */
+  background-color: transparent; /* Make the background transparent */
+  padding: 5px 0; /* Adjust padding as needed */
+  font-size: 16px; /* Set the font size for the input text and dropdown */
+  outline: none; /* Remove the default focus outline */
+  margin-bottom: 20px;
+}
+
+.custom-icon::after {
+  content: url("/assets/icons/arrow-down.svg"); /* Replace this URL with your actual image URL */
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 16px; /* Set the width of the dropdown icon */
+  height: 16px; /* Set the height of the dropdown icon */
+  pointer-events: none; /* Prevent the icon from being clickable */
+}
+
+.password-requirements,
+.user-requirements {
+  color: red;
+  flex: 1;
+  font-size: xx-small; /* Set the desired font size */
+  display: none; /* Hide the message by default */
+  margin: 0px;
+  justify-self: start;
+}
+
+.password-details,
+.user-details {
+  display: grid;
+  position: relative;
+  grid-template-columns: 2fr 1fr; /* Password requirements occupy 2 parts, forgot password occupies 1 part */
+  align-items: center; /* Vertically center align items within the grid */
+  justify-items: end;
+}
+
+/* Styles for the forgot links */
+.forgot {
+  text-align: end;
+  font-size: small;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  grid-column: 2;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: #3fd28b; /* Set the color for the forgot link */
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+.password-details .forgot {
+  text-align: end; /* Align to end when password requirements are displayed */
+}
